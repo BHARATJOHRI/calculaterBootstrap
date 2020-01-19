@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>calculator</title>
+</head>
+<body>
+   
+    <div class="formstyle container p-3 my-3 bg-warning text-white">
+        <form name="forms" class="form-group kj" >
+            <input type="text" class="form-control" name="answer"><br>
+            <br>
+            <div class="btn-group-lg btn-group ">
+
+            <input type="button" value="1" class="ki btn btn-primary " onclick="forms.answer.value += '1'">
+            <input type="button" value="2" class="ki btn btn-primary" onclick="forms.answer.value += '2'">
+            <input type="button" value="3" class="ki btn btn-primary" onclick="forms.answer.value += '3'">
+            </div>    <br><br>
+            <div class="btn-group-lg btn-group">
+
+            <input type="button" value="4" class="ki btn btn-warning" onclick="forms.answer.value += '4'">
+            <input type="button" value="5" class="ki btn btn-warning" onlick="forms.answer.value += '5'">
+            <input type="button" value="6" class="ki btn btn-warning" onclick="forms.answer.value += '6'">
+            </div><br><br>
+            <div class="btn-group-lg btn-group">
+
+            <input type="button" value="7" class="ki btn btn-danger" onclick="forms.answer.value += '7'">
+            <input type="button" value="8" class="ki btn btn-danger" onclick="forms.answer.value += '8'">
+            <input type="button" value="9" class="ki btn btn-danger" onclick="forms.answer.value += '9'">
+            </div> 
+             <br><br>
+             <div class="btn-group-lg btn-group ">
+
+            <input type="button" value="+" class="ki btn btn-success" onclick="forms.answer.value += '+'">
+            <input type="button" value="-" class="ki btn btn-success" onclick="forms.answer.value += '-'">
+            <input type="button" value="*" class="ki btn btn-success" onclick="forms.answer.value += '*'">
+            </div>
+            <br><br> 
+            
+            <div class="btn-group-lg btn-group">
+            <input type="button" value="/" class="ki btn btn-info" onclick="forms.answer.value += '/'">
+            <input type="button" value="0" class="ki btn btn-info" onclick="forms.answer.value += '0'">
+            <input type="button" value="=" class="ki btn btn-info" onclick="forms.answer.value = eval(forms.answer.value)">
+            </div><br><br>
+            <div class="btn-group-lg btn-group">
+
+            <input type="button" value="Clear All" class="ki btn btn-primary" onclick="forms.answer.value = ''" id="clear">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
